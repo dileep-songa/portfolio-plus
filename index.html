@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO & Social Sharing Metadata -->
+  <title>Dileep Songa | Aspiring Data Analyst | Python & SQL Portfolio</title>
+  <meta name="description" content="Personal portfolio of Dileep Songa, Aspiring Data Analyst specializing in Python, SQL, Google BigQuery, dbt staging workflows, exploratory analytics, and process mining.">
+  <meta name="keywords" content="Dileep Songa, Data Analyst, Python, SQL, Google BigQuery, dbt, Process Mining, PM4Py, Data Analytics Portfolio">
+  <meta name="author" content="Dileep Songa">
+  <link rel="canonical" href="https://dileep-songa.github.io/portfolio-plus/">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dileep Songa | Aspiring Data Analyst Portfolio">
+  <meta property="og:description" content="Transforming raw, complex data into actionable business intelligence through rigorous data cleaning, exploratory analysis, SQL modeling, and process mining.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dileep-songa.github.io/portfolio-plus/">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+  <!-- Favicon Fallback -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+</head>
+<body>
+
+  <!-- Accessible Skip Navigation Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Ambient Dark Glassmorphism Background Glows -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-orb-1"></div>
+    <div class="glow-orb-2"></div>
+    <div class="glow-orb-3"></div>
+  </div>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="#home" class="brand-logo" aria-label="Dileep Songa Homepage">
+        <span class="brand-badge">DS</span>
+        <div class="brand-meta">
+          <span class="brand-name">Dileep Songa</span>
+          <span class="brand-title">Data Analyst</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" role="navigation" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary nav-btn-contact btn-contact-header">Get in Touch</a>
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="drawer-backdrop" class="drawer-backdrop" aria-hidden="true"></div>
+  <aside id="mobile-nav-drawer" class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#education" class="nav-link">Education</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 0.75rem;">
+      <a id="mobile-resume-download-btn" href="public/resume/Dileep_Songa_Resume.pdf" download="Dileep_Songa_Resume.pdf" class="btn btn-primary" style="display: none;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        <span>Download Resume</span>
+      </a>
+      <button id="mobile-resume-request-btn" class="btn btn-primary" onclick="openResumeModal(this)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        <span>Request Resume</span>
+      </button>
+      <a href="mailto:dileepsonga23@gmail.com" class="btn btn-secondary">Email Dileep</a>
+    </div>
+  </aside>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content" role="main">
+
+    <!-- 1. Hero / Home Section -->
+    <section id="home" class="hero-section" aria-label="Introduction">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Narrative -->
+          <div class="hero-content">
+            <div class="status-badge">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span>Available for Data Analyst & Intern Roles</span>
+            </div>
+
+            <h1 class="hero-name">Dileep Songa</h1>
+
+            <p class="hero-headline">
+              Aspiring <span class="highlight">Data Analyst</span> | Python | SQL | Data Analytics
+            </p>
+
+            <p class="hero-description">
+              Passionate about transforming ambiguous, raw data into verifiable business intelligence. Specializing in exploratory data analysis (EDA), automated data cleaning, SQL modeling, BigQuery warehousing, and analytical process discovery.
+            </p>
+
+            <!-- Key Chips Strip -->
+            <div class="hero-metrics-strip" aria-label="Core Competencies">
+              <span class="chip-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Python & Pandas
+              </span>
+              <span class="chip-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7v10c0 2 3.6 4 8 4s8-2 8-4V7M4 7c0 2 3.6 4 8 4s8-2 8-4M4 7c0-2 3.6-4 8-4s8 2 8 4"/></svg>
+                SQL & BigQuery
+              </span>
+              <span class="chip-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                dbt Staging Models
+              </span>
+              <span class="chip-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                Process Mining (PM4Py)
+              </span>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                View Featured Projects
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+
+              <div class="resume-cta-wrapper" id="resume-cta-wrapper">
+                <!-- Direct download button for real PDF when present -->
+                <a id="resume-download-btn" href="public/resume/Dileep_Songa_Resume.pdf" download="Dileep_Songa_Resume.pdf" class="btn btn-secondary resume-action-btn" style="display: none;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                  <span>Download Resume</span>
+                </a>
+
+                <!-- Graceful request button shown when PDF is pending upload -->
+                <button id="resume-request-btn" class="btn btn-secondary resume-action-btn" onclick="openResumeModal(this)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                  <span>Request Resume</span>
+                </button>
+
+                <!-- Helpful Development Warning if PDF is missing -->
+                <div id="resume-dev-warning" class="dev-asset-notice" style="display: none;" role="status">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                  <span>Place <code>Dileep_Songa_Resume.pdf</code> in <code>public/resume/</code> to activate Download</span>
+                </div>
+              </div>
+
+              <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+          </div>
+
+          <!-- Profile Photo Area with Graceful Fallback -->
+          <div class="hero-visual">
+            <div class="profile-card-wrapper">
+              <div class="glass-card profile-card">
+                <div class="profile-avatar-container" id="profile-avatar-box">
+                  <!-- Real image will display when user drops dileep-profile.png into public/images/ -->
+                  <img id="profile-img" src="public/images/dileep-profile.png" alt="Dileep Songa" class="profile-img">
+                  
+                  <!-- Graceful Fallback Monogram Avatar -->
+                  <div id="profile-fallback" class="profile-fallback">
+                    <span class="profile-monogram">DS</span>
+                    <span class="profile-badge-sub">Data Analyst</span>
+                  </div>
+                </div>
+
+                <div class="profile-info-name">Dileep Songa</div>
+                <div class="profile-info-role">NRI Institute of Technology</div>
+
+                <div class="profile-quick-stats">
+                  <div class="stat-item">
+                    <span class="stat-val">3,140+</span>
+                    <span class="stat-lbl">Events Mined</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-val">20 Tests</span>
+                    <span class="stat-lbl">Passed in dbt</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Me Section -->
+    <section id="about" class="section" aria-label="About Dileep Songa">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Background & Vision</span>
+          <h2 class="section-title">Bridging Code and Analytical Reasoning</h2>
+          <p class="section-subtitle">
+            Leveraging computer science principles to build reliable, reproducible data analytics pipelines.
+          </p>
+        </header>
+
+        <div class="about-grid">
+          
+          <!-- Narrative Column -->
+          <div class="about-narrative">
+            <p class="narrative-p">
+              I am a <strong>Computer Science undergraduate at NRI Institute of Technology</strong> with a focused ambition toward <strong>Data Analyst and Data Analytics Intern positions</strong>. My journey started with core programming fundamentals and quickly evolved into a passion for transforming raw telemetry and unstructured event tables into actionable business clarity.
+            </p>
+            <p class="narrative-p">
+              In business analytics, data is rarely clean or orderly. I focus on the hard, foundational work that precedes confident decision-making: <strong>rigorous schema validation, null mitigation, anomaly detection, SQL aggregation, and exploratory statistics</strong>. Rather than trusting probabilistic assumptions, I believe every number in a report must have traceable lineage back to its source.
+            </p>
+            <p class="narrative-p">
+              My hands-on projects reflect this philosophy — from uncovering emergency care bottlenecks using event logs and process mining in <strong>CareFlow</strong>, to architecting deterministic sandboxed analytics engines in <strong>AI DataOS</strong>, to analyzing consumer purchasing dynamics in retail case studies.
+            </p>
+          </div>
+
+          <!-- Value Pillars Column -->
+          <div class="about-cards-col">
+            <article class="glass-card pillar-card">
+              <div class="pillar-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+              </div>
+              <div>
+                <h3 class="pillar-title">Clean Data First</h3>
+                <p class="pillar-desc">Prioritizing data integrity, schema enforcement, and exploratory profiling before any modeling or visualization takes place.</p>
+              </div>
+            </article>
+
+            <article class="glass-card pillar-card">
+              <div class="pillar-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7v10c0 2 3.6 4 8 4s8-2 8-4V7M4 7c0 2 3.6 4 8 4s8-2 8-4M4 7c0-2 3.6-4 8-4s8 2 8 4"/></svg>
+              </div>
+              <div>
+                <h3 class="pillar-title">Structured SQL & Warehousing</h3>
+                <p class="pillar-desc">Writing performant window functions, multi-table joins, and dbt staging views to organize complex relational data.</p>
+              </div>
+            </article>
+
+            <article class="glass-card pillar-card">
+              <div class="pillar-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </div>
+              <div>
+                <h3 class="pillar-title">Actionable Business Insights</h3>
+                <p class="pillar-desc">Translating quantitative trends into clear, executive-ready narratives that guide operational and strategic choices.</p>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Technical Skills Section -->
+    <section id="skills" class="section" aria-label="Technical Skills">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Capabilities & Tooling</span>
+          <h2 class="section-title">Demonstrable Technical Skills</h2>
+          <p class="section-subtitle">
+            An accurate reflection of programming languages, analytics methodologies, databases, and developer tools in my workflow.
+          </p>
+        </header>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Programming -->
+          <article class="glass-card skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-header-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3 class="skill-category-name">Programming</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-pill">
+                <span class="skill-name">Python</span>
+                <span class="skill-level-tag">Core (Pandas, NumPy)</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">C Language</span>
+                <span class="skill-level-tag">Foundational</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Category 2: Analytics & Methodology -->
+          <article class="glass-card skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-header-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <h3 class="skill-category-name">Analytics & Methods</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-pill">
+                <span class="skill-name">Data Cleaning & Wrangling</span>
+                <span class="skill-level-tag">Core</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Exploratory Data Analysis (EDA)</span>
+                <span class="skill-level-tag">Core</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Descriptive Statistics</span>
+                <span class="skill-level-tag">Demonstrable</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Process Mining (PM4Py)</span>
+                <span class="skill-level-tag">Demonstrable</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Category 3: Data Querying -->
+          <article class="glass-card skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-header-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7v10c0 2 3.6 4 8 4s8-2 8-4V7M4 7c0 2 3.6 4 8 4s8-2 8-4M4 7c0-2 3.6-4 8-4s8 2 8 4"/></svg>
+              </div>
+              <h3 class="skill-category-name">Data Querying & Storage</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-pill">
+                <span class="skill-name">SQL (Aggregations, Joins, CTEs)</span>
+                <span class="skill-level-tag">Core</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Google BigQuery</span>
+                <span class="skill-level-tag">Demonstrable</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">dbt (Data Testing & Staging)</span>
+                <span class="skill-level-tag">Demonstrable</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Category 4: Visualization -->
+          <article class="glass-card skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-header-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              </div>
+              <h3 class="skill-category-name">Visualization & BI</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-pill">
+                <span class="skill-name">Microsoft Excel (Pivot, Formulas)</span>
+                <span class="skill-level-tag">Demonstrable</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Power BI (Data Models, Reports)</span>
+                <span class="skill-level-tag">Foundational</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Matplotlib & Process Visuals</span>
+                <span class="skill-level-tag">Demonstrable</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Category 5: Developer Tools -->
+          <article class="glass-card skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-header-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9"/><line x1="12" y1="12" x2="12" y2="15"/></svg>
+              </div>
+              <h3 class="skill-category-name">Tools & Practices</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-pill">
+                <span class="skill-name">Git & GitHub Version Control</span>
+                <span class="skill-level-tag">Core</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">VS Code, Terminals & Virtualenvs</span>
+                <span class="skill-level-tag">Core</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Featured Projects Section -->
+    <section id="projects" class="section" aria-label="Featured Analytical Projects">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Applied Work & Case Studies</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            Authentic, verified technical implementations demonstrating data cleaning, warehouse staging, process discovery, and analytical systems design.
+          </p>
+        </header>
+
+        <div class="projects-container">
+
+          <!-- PROJECT 1: CareFlow -->
+          <article class="glass-card project-card" id="project-card-careflow">
+            <div class="project-body">
+              <div class="project-meta-top">
+                <span class="project-badge badge-verified">Verified Implementation</span>
+                <span class="project-badge badge-simulated">Synthetic Event Log</span>
+              </div>
+
+              <h3 class="project-title">CareFlow — Clinical Pathway Process Mining</h3>
+              
+              <p class="project-summary">
+                Discovered and analyzed emergency department patient workflows from chronological event logs using Python, PM4Py, Google BigQuery, and dbt. Identified clinical bottlenecks, transition waiting intervals, and re-triage loopbacks.
+              </p>
+
+              <div class="project-data-specs">
+                <div class="spec-cell">
+                  <span class="spec-label">Dataset Provenance</span>
+                  <span class="spec-value">Synthetic EHR (500 cases, 3,140 events)</span>
+                </div>
+                <div class="spec-cell">
+                  <span class="spec-label">Warehouse Testing</span>
+                  <span class="spec-value">20 dbt Data Tests Passed in BigQuery</span>
+                </div>
+                <div class="spec-cell">
+                  <span class="spec-label">Key Metric</span>
+                  <span class="spec-value">Mean Journey: 202.54 mins (median 211.0)</span>
+                </div>
+                <div class="spec-cell">
+                  <span class="spec-label">Analytical Outcome</span>
+                  <span class="spec-value">7 Activities, 6 Distinct Care Pathways</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">PM4Py</span>
+                <span class="tech-tag">Google BigQuery</span>
+                <span class="tech-tag">dbt</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Pandas</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-primary" onclick="openProjectModal('careflow', this)">
+                  Analytical Deep Dive
+                </button>
+                <a href="https://github.com/dileep-songa/careflow-clinical-pathway" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                  Source Code
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Project Visual Showcase (DFG Plot) -->
+            <div class="project-visual-panel">
+              <img src="assets/images/projects/careflow-dfg.png" alt="Directly-Follows Graph visualization of emergency clinical pathways in CareFlow" class="project-visual-img">
+              <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.75rem; text-align: center;">
+                Directly-Follows Graph (DFG) Process Map Generated with PM4Py
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: AI DataOS -->
+          <article class="glass-card project-card" id="project-card-dataos">
+            <div class="project-body">
+              <div class="project-meta-top">
+                <span class="project-badge badge-verified">Verified Architecture</span>
+                <span class="project-badge badge-case-study">Deterministic Kernel</span>
+              </div>
+
+              <h3 class="project-title">AI DataOS — Autonomous Data Analytics Platform</h3>
+              
+              <p class="project-summary">
+                Engineered an autonomous data analytics kernel designed to eliminate LLM mathematical hallucinations. Separates probabilistic query planning from deterministic calculation through an AST-validated sandboxed execution runtime.
+              </p>
+
+              <div class="project-data-specs">
+                <div class="spec-cell">
+                  <span class="spec-label">Execution Kernel</span>
+                  <span class="spec-value">Deterministic SQL/Python Sandbox</span>
+                </div>
+                <div class="spec-cell">
+                  <span class="spec-label">Security Gate</span>
+                  <span class="spec-value">AST Query & Drop-Command Validator</span>
+                </div>
+                <div class="spec-cell">
+                  <span class="spec-label">Connectors</span>
+                  <span class="spec-value">PostgreSQL & Flat File (CSV/Parquet)</span>
+                </div>
+                <div class="spec-cell">
+                  <span class="spec-label">Orchestrator</span>
+                  <span class="spec-value">LangGraph Multi-Step Query Planner</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">LangGraph</span>
+                <span class="tech-tag">Pydantic</span>
+                <span class="tech-tag">Redis</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-primary" onclick="openProjectModal('ai-dataos', this)">
+                  System Deep Dive
+                </button>
+                <a href="https://github.com/dileep-songa" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                  GitHub Profile
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Project Visual Showcase (Architecture Diagram) -->
+            <div class="project-visual-panel">
+              <div class="project-visual-fallback">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <div class="fallback-title">Deterministic Analytics Architecture</div>
+                <div class="fallback-sub">LLM Planning ➔ AST Validator ➔ Sandboxed SQL/Python Execution ➔ Zero Data Hallucination</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Flipkart Case Study -->
+          <article class="glass-card project-card" id="project-card-flipkart">
+            <div class="project-body">
+              <div class="project-meta-top">
+                <span class="project-badge badge-case-study">Analytical Case Study</span>
+              </div>
+
+              <h3 class="project-title">Flipkart Sales & Customer Analytics</h3>
+              
+              <p class="project-summary">
+                An exploratory retail analytics framework modeling product category revenue, discount elasticity, and customer purchasing frequency. Structures SQL queries and exploratory visualizations for e-commerce performance review.
+              </p>
+
+              <div class="project-data-specs">
+                <div class="spec-cell">
+                  <span class="spec-label">Domain Focus</span>
+                  <span class="spec-value">E-Commerce Retail Transactions</span>
+                </div>
+                <div class="spec-cell">
+                  <span class="spec-label">Analytical Focus</span>
+                  <span class="spec-value">Discount Elasticity & Category Revenue</span>
+                </div>
+                <div class="spec-cell">
+                  <span class="spec-label">Customer Modeling</span>
+                  <span class="spec-value">RFM (Recency, Frequency, Monetary)</span>
+                </div>
+                <div class="spec-cell">
+                  <span class="spec-label">Status</span>
+                  <span class="spec-value">Methodology Framed; Repo in Prep</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Microsoft Excel</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-primary" onclick="openProjectModal('flipkart-analytics', this)">
+                  Case Study Review
+                </button>
+                <a href="https://github.com/dileep-songa" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                  GitHub Profile
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Project Visual Showcase -->
+            <div class="project-visual-panel">
+              <div class="project-visual-fallback">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                <div class="fallback-title">Retail Analytics Framework</div>
+                <div class="fallback-sub">Category Sales Mix • Discount Sensitivity • Customer Cohort Retention Modeling</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Education & Continuous Learning Section -->
+    <section id="education" class="section" aria-label="Education and Qualifications">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education & Foundation</h2>
+          <p class="section-subtitle">
+            Formal computer science training and technical problem-solving foundation.
+          </p>
+        </header>
+
+        <div class="edu-cert-grid">
+          
+          <!-- Education Column -->
+          <article class="glass-card timeline-card">
+            <div class="card-title-group">
+              <div class="title-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <h3 style="font-size: 1.125rem; font-weight: 700;">Academic Education</h3>
+            </div>
+
+            <div class="timeline-list">
+              <div class="timeline-node">
+                <span class="timeline-dot" aria-hidden="true"></span>
+                <h4 class="timeline-heading">B.Tech in Computer Science & Engineering</h4>
+                <div class="timeline-institution">NRI Institute of Technology</div>
+                <div class="timeline-period">Current Undergraduate Student</div>
+                <p class="timeline-desc">
+                  Core curriculum covering Database Management Systems (DBMS), Data Structures & Algorithms, Operating Systems, Computer Networks, and Statistical Programming. Practical focus on data manipulation using Python and SQL.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Core Learning Highlights -->
+          <article class="glass-card timeline-card">
+            <div class="card-title-group">
+              <div class="title-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              </div>
+              <h3 style="font-size: 1.125rem; font-weight: 700;">Applied Analytics Competencies</h3>
+            </div>
+
+            <div class="timeline-list">
+              <div class="timeline-node">
+                <span class="timeline-dot" aria-hidden="true"></span>
+                <h4 class="timeline-heading">Modern Data Stack & Cloud Analytics</h4>
+                <div class="timeline-institution">Google BigQuery & dbt Labs Ecosystem</div>
+                <div class="timeline-period">Practical Implementation Track</div>
+                <p class="timeline-desc">
+                  Hands-on execution of data transformation pipelines, schema constraints, and data testing suites in cloud data warehouses.
+                </p>
+              </div>
+
+              <div class="timeline-node">
+                <span class="timeline-dot" aria-hidden="true"></span>
+                <h4 class="timeline-heading">Process Mining & Clinical Log Modeling</h4>
+                <div class="timeline-institution">PM4Py Framework & Workflow Discovery</div>
+                <div class="timeline-period">Algorithmic & Statistical Analysis</div>
+                <p class="timeline-desc">
+                  Modeling process flows, variant detection, transition time bottlenecks, and Directly-Follows Graphs from synthetic healthcare logs.
+                </p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Contact Section -->
+    <section id="contact" class="section" aria-label="Contact Information">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="glass-card contact-card">
+            <span class="section-tag">Direct Communication</span>
+            <h2 class="contact-headline">Let's Connect</h2>
+            <p class="contact-desc">
+              I am actively seeking <strong>Data Analyst and Data Analytics Intern opportunities</strong>. If you have an opening, a collaborative project, or would like to review my technical work, feel free to reach out directly.
+            </p>
+
+            <div class="contact-channels-grid">
+              <a href="mailto:dileepsonga23@gmail.com" class="channel-btn" aria-label="Send email to dileepsonga23@gmail.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span>dileepsonga23@gmail.com</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/dileepsonga/" target="_blank" rel="noopener noreferrer" class="channel-btn" aria-label="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                <span>LinkedIn Profile</span>
+              </a>
+
+              <a href="https://github.com/dileep-songa/" target="_blank" rel="noopener noreferrer" class="channel-btn" aria-label="GitHub Profile">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                <span>GitHub Profile</span>
+              </a>
+            </div>
+
+            <!-- Email Quick Copy Bar -->
+            <div class="email-copy-bar">
+              <span>Direct Email: dileepsonga23@gmail.com</span>
+              <button class="btn-copy" onclick="copyEmailToClipboard()" aria-label="Copy email address to clipboard">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <div class="footer-name">Dileep Songa</div>
+        <div class="footer-role">Aspiring Data Analyst | Python • SQL • Data Analytics</div>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/dileepsonga/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        <a href="https://github.com/dileep-songa/" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="mailto:dileepsonga23@gmail.com" class="footer-link">Email</a>
+        <span class="footer-link" style="color: var(--text-muted);">© <span id="current-year">2026</span> Dileep Songa</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project & Resume Accessible Modal Dialog -->
+  <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog" id="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-title" class="modal-title">Details</h3>
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close dialog">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Loading project details...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notice -->
+  <div id="toast-notice" class="toast-notice" role="status" aria-live="polite">
+    Copied to clipboard
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
